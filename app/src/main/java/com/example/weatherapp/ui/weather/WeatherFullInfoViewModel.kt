@@ -1,10 +1,10 @@
-package com.example.weatherapp.ui.WeatherInfo
+package com.example.weatherapp.ui.weather
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class WeatherInfoViewModel : ViewModel() {
+class WeatherFullInfoViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
