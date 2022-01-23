@@ -1,10 +1,9 @@
-package com.example.weatherapp.model.common
+package com.example.weatherapp.common
 
-data class BaseFullInfo(
+data class BaseShortInfo(
     val lat : Double,
     val lon : Double,
     val timezone : String,
     val timezone_offset : Int,
     val current : Current,
-    val daily : List<Daily>
 )

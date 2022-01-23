@@ -1,6 +1,6 @@
 package com.example.weatherapp.api
 
-import com.example.weatherapp.model.common.BaseFullInfo
+import com.example.weatherapp.common.BaseFullInfo
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
