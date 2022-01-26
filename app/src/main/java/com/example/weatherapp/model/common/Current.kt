@@ -1,8 +1,6 @@
-package com.example.weatherapp.common
+package com.example.weatherapp.model.common
 
 data class Current(
-
-    val dt : Int,
     val temp : Double,
     val feels_like : Double,
     val pressure : Int,
