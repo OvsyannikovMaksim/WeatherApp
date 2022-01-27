@@ -46,6 +46,7 @@ class WeatherFullInfoFragment : Fragment() {
             binding?.feelTemperature?.text=currentWeather.feels_like
             binding?.pressure?.text=currentWeather.pressure
             binding?.weatherName?.text = currentWeather.weatherDescription
+            binding?.wind?.text = currentWeather.wind
             Picasso.with(view.context).load(currentWeather.weatherPicture).into(binding?.weatherPic)
         }
     }

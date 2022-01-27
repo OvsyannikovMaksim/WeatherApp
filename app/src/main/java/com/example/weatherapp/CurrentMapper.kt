@@ -5,17 +5,17 @@ import com.example.weatherapp.model.common.Current
 import com.example.weatherapp.model.common.CurrentParsed
 import com.example.weatherapp.model.common.Weather
 import java.util.*
+import kotlin.math.*
 
 class CurrentMapper: Mapper<Current, CurrentParsed> {
 
     override fun map(src: Current, context: Context): CurrentParsed = CurrentParsed(
-        "${src.temp.toInt()} ${context.getString(R.string.celsius)}",
-        "${context.getString(R.string.feels)} ${src.feels_like.toInt()} ${context.getString(R.string.celsius)}",
+        "${round(src.temp).toInt()} ${context.getString(R.string.celsius)}",
+        "${context.getString(R.string.feels)} ${round(src.feels_like).toInt()} ${context.getString(R.string.celsius)}",
         "${src.pressure} ${context.getString(R.string.pressure)}",
         "${context.getString(R.string.humidity)} ${src.humidity}%",
         "${context.getString(R.string.UV)} ${src.uvi}",
-        "${src.wind_speed} ${context.getString(R.string.ms)}",
-        calculateDegree(src.wind_deg, context),
+        "${context.getString(R.string.wind)} ${"%.1f".format(src.wind_speed)} ${context.getString(R.string.ms)} ${calculateDegree(src.wind_deg, context)}",
         getWeatherDescription(src.weather[0]),
         getWeatherPictureURL(src.weather[0])
     )

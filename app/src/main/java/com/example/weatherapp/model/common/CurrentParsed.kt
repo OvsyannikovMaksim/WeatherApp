@@ -5,7 +5,6 @@ data class CurrentParsed(val temp : String,
                          val pressure : String,
                          val humidity : String,
                          val uvi : String,
-                         val wind_speed : String,
-                         val wind_deg : String,
+                         val wind : String,
                          val weatherDescription: String,
                          val weatherPicture : String)

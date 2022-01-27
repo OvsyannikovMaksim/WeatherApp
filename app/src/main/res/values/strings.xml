@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="title_weather">Weather</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
     <string name="celsius" translatable="false">°C</string>
     <string name="UV">UV index</string>
     <string name="pressure">hPa</string>
     <string name="ms">m/s</string>
-    <string name="minmax">min/max</string>
+    <string name="minmax" translatable="false">min/max</string>
     <string name="feels">feels</string>
     <string name="E">E</string>
     <string name="ENE">ENE</string>
@@ -26,4 +26,5 @@
     <string name="NW">NW</string>
     <string name="NNW">NNW</string>
     <string name="humidity">humidity</string>
+    <string name="wind">wind</string>
 </resources>
