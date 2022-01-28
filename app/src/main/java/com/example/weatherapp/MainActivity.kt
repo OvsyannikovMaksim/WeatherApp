@@ -1,9 +1,12 @@
 package com.example.weatherapp
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
-import android.os.StrictMode
-import android.os.StrictMode.VmPolicy
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -18,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
 /*
         if (BuildConfig.DEBUG) {
@@ -52,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.navigation_weather, R.id.navigation_dashboard, R.id.navigation_notifications))
+
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
