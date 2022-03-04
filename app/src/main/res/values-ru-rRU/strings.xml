@@ -24,4 +24,5 @@
     <string name="humidity">влажность</string>
     <string name="wind">ветер</string>
     <string name="pressure">гПа</string>
+    <string name="PermissionToastText">Необходим доступ к геолокации для определения погоды в текущем местоположении</string>
 </resources>

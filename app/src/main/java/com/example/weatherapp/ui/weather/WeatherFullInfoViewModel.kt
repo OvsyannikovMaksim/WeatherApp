@@ -14,12 +14,12 @@ class WeatherFullInfoViewModel(private val weatherRepo: WeatherRepo) : ViewModel
     val weather: MutableLiveData<BaseFullInfo> = MutableLiveData()
 
 
-    fun getWeather(latitude: String,
-                   longitude: String,
+    fun getWeather(latitude: Double,
+                   longitude: Double,
                    lang: String){
 
 
-        disposable = weatherRepo.getFullInfo(latitude, longitude, lang)
+        disposable = weatherRepo.getFullInfo(latitude.toString(), longitude.toString(), lang)
             .subscribeOn(Schedulers.io())
             .subscribe { weather.postValue(it) }
     }

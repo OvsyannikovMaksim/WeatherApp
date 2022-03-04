@@ -27,4 +27,5 @@
     <string name="NNW">NNW</string>
     <string name="humidity">humidity</string>
     <string name="wind">wind</string>
+    <string name="PermissionToastText">Access to geolocation is required to determine the weather at the current location </string>
 </resources>
