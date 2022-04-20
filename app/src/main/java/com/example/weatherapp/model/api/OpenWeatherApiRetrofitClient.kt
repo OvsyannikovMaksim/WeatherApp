@@ -1,4 +1,4 @@
-package com.example.weatherapp.api
+package com.example.weatherapp.model.api
 
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

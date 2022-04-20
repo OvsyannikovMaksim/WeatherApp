@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="title_weather">Погода</string>
+    <string name="UV">УФ индекс</string>
+    <string name="ms">м/с</string>
+    <string name="feels">ощущается</string>
+    <string name="E">В</string>
+    <string name="ENE">ВСВ</string>
+    <string name="NE">СВ</string>
+    <string name="NNE">ССВ</string>
+    <string name="N">С</string>
+    <string name="ESE">ВЮВ</string>
+    <string name="SE">ЮВ</string>
+    <string name="SSE">ЮЮВ</string>
+    <string name="S">Ю</string>
+    <string name="SSW">ЮЮЗ</string>
+    <string name="SW">ЮЗ</string>
+    <string name="WSW">ЗВЗ</string>
+    <string name="W">З</string>
+    <string name="WNW">ЗСЗ</string>
+    <string name="NW">СВ</string>
+    <string name="NNW">ССЗ</string>
+    <string name="humidity">влажность</string>
+    <string name="wind">ветер</string>
+    <string name="pressure">гПа</string>
+    <string name="PermissionToastText">Необходим доступ к геолокации для определения погоды в текущем местоположении</string>
+</resources>
